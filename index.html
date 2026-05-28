@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberZen 个人作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Added Noto Sans SC, ZCOOL QingKe HuangYou, and Ma Shan Zheng -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=ZCOOL+QingKe+HuangYou&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Noto Sans SC', sans-serif;
+      }
+      .font-cyber {
+        font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+        letter-spacing: 0.05em;
+      }
+      .font-kaiti {
+        font-family: 'Ma Shan Zheng', cursive;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(100, 116, 139, 0.5);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(100, 116, 139, 0.8);
+      }
+      
+      /* 3D Transforms */
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      
+      /* Cloud Animations */
+      @keyframes float-cloud {
+        0% { transform: translateX(0) translateY(0); }
+        50% { transform: translateX(20px) translateY(-10px); }
+        100% { transform: translateX(0) translateY(0); }
+      }
+      
+      @keyframes drift {
+        from { transform: translateX(-100%); }
+        to { transform: translateX(100vw); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
